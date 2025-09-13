@@ -1,0 +1,31 @@
+# Environmental Profile Configuration
+# This file defines environmental spatial statistics for adaptive camouflage synthesis
+
+# Dominant spatial scales in pixels for this environment
+# These scales represent the characteristic sizes of natural features
+# that the camouflage pattern should blend with
+dominant_scales_px:
+  - 8      # Fine texture scale (leaves, small rocks)
+  - 16     # Medium feature scale (branches, shadows) 
+  - 32     # Large feature scale (tree trunks, large rocks)
+  - 64     # Macro feature scale (canopy gaps, terrain variations)
+
+# Environmental characteristics
+environment_type: "forest"
+lighting_conditions: "mixed"
+seasonal_variation: "spring"
+
+# Pattern synthesis parameters (optional overrides)
+base_macro_density: 0.03
+max_region_size_percent: 8.0  # Maximum connected region as % of tile area
+
+# Color palette (for future color synthesis)
+primary_colors:
+  - [34, 45, 23]   # Dark green
+  - [67, 89, 45]   # Medium green  
+  - [89, 67, 34]   # Brown
+  - [45, 34, 23]   # Dark brown
+
+secondary_colors:
+  - [156, 145, 123]  # Light tan
+  - [78, 95, 67]     # Olive green
